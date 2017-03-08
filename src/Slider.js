@@ -531,4 +531,4 @@ var defaultStyles = StyleSheet.create({
   }
 });
 
-export default Slider;
+module.exports = Slider;
