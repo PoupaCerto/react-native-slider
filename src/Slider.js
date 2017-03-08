@@ -1,5 +1,5 @@
 'use strict';
-
+//https://github.com/jeanregisser/react-native-slider
 import React, {
   Component,
   PropTypes
@@ -277,8 +277,9 @@ var Slider = React.createClass({
               ],
               ...valueVisibleStyle
             }
-          ]}
-        />
+          ]}>
+          {this.props.children}
+        </Animated.View>
         <View
           style={[defaultStyles.touchArea, touchOverflowStyle]}
           {...this._panResponder.panHandlers}>
@@ -530,4 +531,4 @@ var defaultStyles = StyleSheet.create({
   }
 });
 
-module.exports = Slider;
+export default Slider;
