@@ -602,6 +602,7 @@ var defaultStyles = StyleSheet.create({
   },
   thumb: {
     position: 'absolute',
+    overflow: 'visible',
     width: THUMB_SIZE,
     height: THUMB_SIZE,
     borderRadius: THUMB_SIZE / 2,
